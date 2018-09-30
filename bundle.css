@@ -353,9 +353,6 @@ html {
     html {
       font-size: 0.52vw; } }
 
-body {
-  color: red; }
-
 a:hover,
 button:hover {
   cursor: pointer; }
@@ -368,7 +365,7 @@ button:hover {
   margin: 0 auto;
   -webkit-box-shadow: 0 0 2rem 1px rgba(55, 53, 154, 0.15);
   box-shadow: 0 0 2rem 1px rgba(55, 53, 154, 0.15);
-  background: white; }
+  background: #fff; }
   .main-menu__list {
     display: none;
     list-style-type: none; }
@@ -493,7 +490,7 @@ button:hover {
 .main-slider {
   background-image: url(src/images/bg2.jpg);
   background-size: cover;
-  color: #ffffff;
+  color: #fff;
   padding: 25rem 2.5rem 0;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -501,7 +498,7 @@ button:hover {
   .main-slider__heading {
     font-size: 4rem;
     line-height: 5rem;
-    color: #ffffff;
+    color: #fff;
     font-weight: bold;
     margin: 0 0 3rem; }
   .main-slider__desc {
@@ -528,7 +525,7 @@ button:hover {
     text-decoration: none;
     line-height: 2.4rem;
     padding: 2rem 3rem;
-    color: #ffffff;
+    color: #fff;
     background-color: #6166ed;
     text-align: center; }
   .main-slider__logos {
@@ -775,7 +772,7 @@ button:hover {
   margin-right: auto;
   max-width: 686px; }
   .contact-form__heading {
-    color: white;
+    color: #fff;
     text-align: left;
     font-size: 3rem;
     font-weight: 700;
@@ -806,10 +803,10 @@ button:hover {
   .form__input {
     background: transparent;
     border: 0;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid #fff;
     padding: 1rem 0;
     margin-bottom: 3rem;
-    color: white;
+    color: #fff;
     font-size: 1.4rem;
     font-weight: 500;
     text-transform: uppercase;
@@ -820,7 +817,7 @@ button:hover {
   .form__input:invalid:not(:placeholder-shown):not(:focus), .form__textarea:invalid:not(:placeholder-shown):not(:focus) {
     border-bottom: 1px solid #E91E63; }
   .form__label, .form__label--text-area {
-    color: white;
+    color: #fff;
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
     font-size: 1.2rem;
@@ -828,10 +825,10 @@ button:hover {
   .form__textarea {
     background: transparent;
     border: 0;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid #fff;
     padding: 1rem 0;
     margin-bottom: 3rem;
-    color: white;
+    color: #fff;
     font-size: 1.4rem;
     font-weight: 500;
     text-transform: uppercase;
@@ -895,7 +892,7 @@ button:hover {
   padding-top: 10rem; }
   .footer p {
     margin: 0;
-    color: white;
+    color: #fff;
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
     font-size: 1.4rem;
