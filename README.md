@@ -17,3 +17,9 @@ npm run dev
 ```
 npm run build
 ```
+
+### Wersja live
+
+```
+https://shadaxv.github.io/AWWW/
+```
