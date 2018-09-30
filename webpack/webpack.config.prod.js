@@ -29,15 +29,14 @@ module.exports = merge(common, {
     }
   },
   module: {
-    rules: [
-      {
+    rules: [{
         test: /\.(js)$/,
         exclude: /(node_modules|bower_components)/,
         use: 'babel-loader'
       },
       {
         test: /\.s?css/i,
-        use : [
+        use: [
           MiniCssExtractPlugin.loader,
           'css-loader',
           'sass-loader'
