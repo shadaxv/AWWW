@@ -1,7 +1,21 @@
 @import url("~normalize.css/normalize.css");
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&subset=latin-ext');
-$body-color: red;
-$main-font-color: #ffffff;
+$white: #fff;
+$white-darker: #f0f0f0;
+
+$purple-lighter: #6166ed;
+$purple: #4b479e;
+
+$blue-lighter: #5c7cc7;
+$blue: #72b2f2;
+$blue-darker: #161765;
+
+$green-darker: #4CAF50;
+$green: #7dbd6e;
+
+$red: #E91E63;
+
+$black: #000;
 
 :root,
 html {
@@ -12,10 +26,6 @@ html {
   @media only screen and (min-width: 1280px) {
     font-size: 0.52vw;
   }
-}
-
-body {
-  color: $body-color;
 }
 
 a:hover,
@@ -61,7 +71,7 @@ button:hover {
       font-size: 86.73px;
       font-family: 'Montserrat', sans-serif;
       letter-spacing: -0.02em;
-      fill: #161765;
+      fill: $blue-darker;
     }
   }
 
@@ -89,8 +99,8 @@ button:hover {
       height: 0;
       top: 4px;
       left: 0;
-      -webkit-box-shadow: 0 8px 0 1px #000, 0 16px 0 1px #000;
-      box-shadow: 0 8px 0 1px #000, 0 16px 0 1px #000;
+      -webkit-box-shadow: 0 8px 0 1px $black, 0 16px 0 1px $black;
+      box-shadow: 0 8px 0 1px $black, 0 16px 0 1px $black;
     }
 
     &:before {
@@ -101,11 +111,11 @@ button:hover {
       height: 0;
       top: 4px;
       left: 0;
-      -webkit-box-shadow: 0 0 0 1px #000;
-      box-shadow: 0 0 0 1px #000;
+      -webkit-box-shadow: 0 0 0 1px $black;
+      box-shadow: 0 0 0 1px $black;
     }
   }
-  background: white;
+  background: $white;
 
   &--on-top {
     background: none;
@@ -119,26 +129,26 @@ button:hover {
     }
 
     .main-menu__anchor {
-      color: #fff;
+      color: $white;
     }
 
     .main-menu__icon {
       margin-top: 4px;
 
       &:after {
-        -webkit-box-shadow: 0 8px 0 1px #fff, 0 16px 0 1px #fff;
-        box-shadow: 0 8px 0 1px #fff, 0 16px 0 1px #fff;
+        -webkit-box-shadow: 0 8px 0 1px $white, 0 16px 0 1px $white;
+        box-shadow: 0 8px 0 1px $white, 0 16px 0 1px $white;
       }
 
       &:before {
-        -webkit-box-shadow: 0 0 0 1px #fff;
-        box-shadow: 0 0 0 1px #fff;
+        -webkit-box-shadow: 0 0 0 1px $white;
+        box-shadow: 0 0 0 1px $white;
       }
     }
 
     .main-menu__logo {
       .cls-1 {
-        fill: #fff;
+        fill: $white;
       }
     }
     @media only screen and (min-width: 1280px) {
@@ -179,12 +189,12 @@ button:hover {
       font-size: 1.8rem;
       font-weight: 600;
       margin-right: 1rem;
-      color: #000;
+      color: $black;
     }
 
     &__item:last-of-type &__anchor {
       margin-right: 0;
-      border: 2px solid #5c7cc7;
+      border: 2px solid $blue-lighter;
       border-radius: 3rem;
       padding: 1.5rem 2.5rem;
     }
@@ -207,7 +217,7 @@ button:hover {
 .main-slider {
   background-image: url("../images/bg2.jpg");
   background-size: cover;
-  color: $main-font-color;
+  color: $white;
   padding: 25rem 2.5rem 0;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -216,13 +226,13 @@ button:hover {
   &__heading {
     font-size: 4rem;
     line-height: 5rem;
-    color: #ffffff;
+    color: $white;
     font-weight: bold;
     margin: 0 0 3rem;
   }
 
   &__desc {
-    color: #72b2f2;
+    color: $blue;
     font-size: 2rem;
     font-weight: 400;
     line-height: 3rem;
@@ -249,8 +259,8 @@ button:hover {
     text-decoration: none;
     line-height: 2.4rem;
     padding: 2rem 3rem;
-    color: $main-font-color;
-    background-color: #6166ed;
+    color: $white;
+    background-color: $purple-lighter;
     text-align: center;
   }
 
@@ -296,7 +306,7 @@ button:hover {
   padding: 10rem 2.5rem 0;
 
   &--second {
-    background-color: #f0f0f0;
+    background-color: $white-darker;
     margin-top: 10rem;
     padding-bottom: 1px;
   }
@@ -388,7 +398,7 @@ button:hover {
 
 .article {
   &__heading {
-    color: #4b479e;
+    color: $purple;
     font-size: 3rem;
     font-weight: 700;
     line-height: 4rem;
@@ -400,7 +410,7 @@ button:hover {
 
   &__paragraph {
     line-height: 3rem;
-    color: #000;
+    color: $black;
     font-family: 'Montserrat', sans-serif;
     font-size: 1.6rem;
     font-weight: 500;
@@ -447,7 +457,7 @@ button:hover {
   }
 
   &__heading {
-    color: #161765;
+    color: $blue-darker;
     font-size: 2rem;
     font-weight: 600;
     line-height: 3rem;
@@ -457,7 +467,7 @@ button:hover {
   }
 
   &__paragraph {
-    color: #161765;
+    color: $blue-darker;
     font-family: 'Montserrat', sans-serif;
     line-height: 2.4rem;
     font-size: 1.6rem;
@@ -467,14 +477,14 @@ button:hover {
   }
 
   &__anchor {
-    background-color: #4b479e;
+    background-color: $purple;
     font-family: 'Montserrat', sans-serif;
     display: block;
     margin-top: 4rem;
     padding: 2rem 3rem;
     font-size: 1.8rem;
     font-weight: 600;
-    color: #fff;
+    color: $white;
     text-align: center;
     text-decoration: none;
   }
@@ -517,13 +527,13 @@ button:hover {
     font-size: 16pt;
     line-height: 2.4rem;
     font-size: 1.6rem;
-    color: #fff;
+    color: $white;
     text-align: center;
     text-transform: uppercase;
     font-weight: 500;
 
     a {
-      color: #7dbd6e;
+      color: $green;
       text-decoration: none;
     }
   }
@@ -554,7 +564,7 @@ button:hover {
   max-width: 686px;
 
   &__heading {
-    color: white;
+    color: $white;
     text-align: left;
     font-size: 3rem;
     font-weight: 700;
@@ -590,10 +600,10 @@ button:hover {
   &__input {
     background: transparent;
     border: 0;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid $white;
     padding: 1rem 0;
     margin-bottom: 3rem;
-    color: white;
+    color: $white;
     font-size: 1.4rem;
     font-weight: 500;
     text-transform: uppercase;
@@ -603,17 +613,17 @@ button:hover {
 
   &__input:valid,
   &__textarea:valid {
-    border-bottom: 1px solid #4CAF50;
+    border-bottom: 1px solid $green-darker;
   }
 
   &__input:invalid:not(:placeholder-shown):not(:focus),
   &__textarea:invalid:not(:placeholder-shown):not(:focus) {
-    border-bottom: 1px solid #E91E63;
+    border-bottom: 1px solid $red;
   }
 
   &__label,
   &__label--text-area {
-    color: white;
+    color: $white;
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
     font-size: 1.2rem;
@@ -623,10 +633,10 @@ button:hover {
   &__textarea {
     background: transparent;
     border: 0;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid $white;
     padding: 1rem 0;
     margin-bottom: 3rem;
-    color: white;
+    color: $white;
     font-size: 1.4rem;
     font-weight: 500;
     text-transform: uppercase;
@@ -637,11 +647,11 @@ button:hover {
   &__button {
     text-align: center;
     font-family: 'Montserrat', sans-serif;
-    color: #7dbd6e;
+    color: $green;
     font-weight: 600;
     font-size: 1.6rem;
     background: transparent;
-    border: 1px solid #7dbd6e;
+    border: 1px solid $green;
     padding: 22.5px 39px;
     border-radius: 30px;
     text-transform: uppercase;
@@ -709,7 +719,7 @@ button:hover {
 
   p {
     margin: 0;
-    color: white;
+    color: $white;
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
     font-size: 1.4rem;
@@ -738,7 +748,7 @@ button:hover {
 }
 
 .social-icon:hover .path {
-  fill: #7dbd6e;
+  fill: $green;
   cursor: pointer;
 }
 
